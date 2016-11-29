@@ -1,0 +1,49 @@
+﻿{
+  "Release": [
+    {
+      "Version": "0.0.1",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "0.0.1",
+          "User": "*",
+          "Url": "http://www.wfzkd.com/auth?"
+        }
+      ]
+    },
+    {
+      "Version": "1.0.0",
+      "Native": [
+        {
+          "Name": "android",
+          "User": "*",
+          "Version": "4.0.0",
+          "Url": "http://m.wfzkd.com/v/1.0.0/#!/auth?"
+        },
+        {
+          "Name": "ios",
+          "User": "*",
+          "Version": "4.0.0",
+          "Url": "http://m.wfzkd.com/v/1.0.0/#!/auth?"
+        }
+      ]
+    },
+    {
+      "Version": "1.1.0",
+      "Native": [
+        {
+          "Name": "android",
+          "User": "*",
+          "Version": "4.0.0",
+          "Url": "http://m.wfzkd.com/v/1.1.0/#!/auth?"
+        },
+        {
+          "Name": "ios",
+          "User": "*",
+          "Version": "4.0.0",
+          "Url": "http://m.wfzkd.com/v/1.1.0/#!/auth?"
+        }
+      ]
+    }
+  ]
+}

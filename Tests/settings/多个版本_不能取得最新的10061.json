@@ -1,0 +1,264 @@
+﻿{
+  "Release": [
+    {
+      "Version": "2.0.0.10061",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.10061_d34ec788.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.7061",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.7061_ae5df28f.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.7065",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.7065_ae5df28f.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.7221",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.7221_6d7de49a.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8251",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8251_b79d8e00.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8261",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8261_32b386df.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8351",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8351_c803d0c9.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8361",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8361_33956b60.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8371",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8371_d2bcfec4.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8381",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8381_8c7f0edd.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8391",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8391_672e90fc.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8401",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8401_c7774ece.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8411",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8411_2c0faef4.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8421",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8421_2fe79341.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8491",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8491_1ea2bcd8.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8501",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8501_b24795f2.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.8891",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.8891_66396656.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.9151",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.9151_546a4ec9.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.9931",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.9931_61af3cb9.wgt"
+        }
+      ]
+    },
+    {
+      "Version": "2.0.0.9951",
+      "Native": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "ReleaseVersion": null,
+          "User": "*",
+          "Group": null,
+          "Url": "http://things.loocaa.com/apps/update/things_2.0.0.9951_9a745929.wgt"
+        }
+      ]
+    }
+  ]
+}
