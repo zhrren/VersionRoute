@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mark.VersionRoute
+namespace Mark.VersionRouter
 {
     public class Package
     {

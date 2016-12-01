@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Mark.VersionRoute
+namespace Mark.VersionRouter
 {
     public class Entry
     {

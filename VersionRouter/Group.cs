@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Mark.VersionRoute
+namespace Mark.VersionRouter
 {
     public class Group
     {
