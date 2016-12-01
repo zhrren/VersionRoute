@@ -1,22 +1,33 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
+    "debugType": "portable",
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "include": [ "settings" ],
+      "includeFiles": [ "" ]
+    }
   },
-
   "dependencies": {
-    "Mark.Settings": "3.0.0",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.1"
-    },
-    "NUnit": "3.5.0",
-    "VersionRoute": "1.0.0"
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "Mark.SettingsContext": "3.6.0",
+    "System.Text.Encoding.CodePages": "4.3.0",
+    "xunit": "2.2.0-beta4-build3444",
+    "xunit.runner.console": "2.2.0-beta4-build3444"
   },
-
   "frameworks": {
-    "netcoreapp1.0": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.1.0"
+        },
+        "VersionRoute": {
+          "target": "project"
+        }
+      },
       "imports": "dnxcore50"
     }
-  }
+  },
+  "testRunner": "xunit"
 }
