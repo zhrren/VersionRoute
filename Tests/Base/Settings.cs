@@ -8,6 +8,6 @@ namespace Tests.Base
 {
     public class Settings
     {
-        public List<Release> Release { get; set; }
+        public List<Package> Packages { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Mark.VersionRoute
 {
-    public class Native
+    public class Client
     {
         public string Name { get; set; }
         public string Version { get; set; }

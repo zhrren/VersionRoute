@@ -8,21 +8,21 @@ namespace Mark.VersionRoute
 {
     public class Router
     {
-        private List<Release> _releaseList;
-        private List<Group> _groupList;
+        private List<Package> _packages;
+        private List<Group> _groups;
 
-        public Router(List<Release> releases, List<Group> groups)
+        public Router(List<Package> packages, List<Group> groups)
         {
-            _releaseList = releases;
-            _groupList = groups;
+            _packages = packages;
+            _groups = groups;
         }
 
         public Entry Match(string nativeName, string nativeVersion, string uid)
         {
             List<Entry> entries = new List<Entry>();
-            _releaseList.ForEach(x =>
+            _packages.ForEach(x =>
             {
-                x.Native.ForEach(n =>
+                x.Client.ForEach(n =>
                 {
                     var entry = new Entry(n.Name, n.User, n.Group, n.Url, n.Version, x.Version);
                     entries.Add(entry);
@@ -32,13 +32,13 @@ namespace Mark.VersionRoute
             List<Entry> namedNative = entries.Where(x => VerifyName(x, nativeName)).ToList();
 
             var resultList = namedNative.Where(x =>
-                Entry.ParseVersion(nativeVersion) >= x.NativeVersion
-                && VerifyUser(x, uid, _groupList)).ToList();
-            var resultItem = resultList.OrderByDescending(x => x.NativeVersion).FirstOrDefault();
+                Entry.ParseVersion(nativeVersion) >= x.ClientVersion
+                && VerifyUser(x, uid, _groups)).ToList();
+            var resultItem = resultList.OrderByDescending(x => x.ClientVersion).FirstOrDefault();
             if (resultItem != null)
             {
-                resultItem = resultList.Where(x => x.NativeVersion == resultItem.NativeVersion)
-                    .OrderByDescending(x => x.ReleaseVersion)
+                resultItem = resultList.Where(x => x.ClientVersion == resultItem.ClientVersion)
+                    .OrderByDescending(x => x.PackageVersion)
                     .FirstOrDefault();
             }
 
@@ -65,11 +65,11 @@ namespace Mark.VersionRoute
 
             if (!string.IsNullOrWhiteSpace(entry.Group) && groupList != null && groupList.Count > 0)
             {
-                if (entry.Group == "*" && groupList.Any(x => x.User.Any(u => user.Equals(u, StringComparison.OrdinalIgnoreCase))))
+                if (entry.Group == "*" && groupList.Any(x => x.Users.Any(u => user.Equals(u, StringComparison.OrdinalIgnoreCase))))
                     return true;
 
                 var group = groupList.FirstOrDefault(x => x.Name.Equals(x.Name, StringComparison.OrdinalIgnoreCase));
-                if (group != null && group.User.Any(x => user.Equals(x, StringComparison.OrdinalIgnoreCase)))
+                if (group != null && group.Users.Any(x => user.Equals(x, StringComparison.OrdinalIgnoreCase)))
                     return true;
             }
 

@@ -22,7 +22,7 @@
           "type": "platform",
           "version": "1.1.0"
         },
-        "VersionRoute": {
+        "VersionRouter": {
           "target": "project"
         }
       },

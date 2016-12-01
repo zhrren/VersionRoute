@@ -11,6 +11,7 @@ namespace Tests
         public static void Main(string[] args)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
         }
     }
 }

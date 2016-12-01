@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Mark.VersionRoute
 {
-    public class Release
+    public class Package
     {
         public string Version { get; set; }
 
-        public List<Native> Native { get; set; }
+        public List<Client> Client { get; set; }
     }
 }

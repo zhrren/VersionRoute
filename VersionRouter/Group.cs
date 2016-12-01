@@ -11,11 +11,11 @@ namespace Mark.VersionRoute
         public Group(string name, string[] user)
         {
             Name = name;
-            User = user;
+            Users = user;
         }
 
         public string Name { get; set; }
         
-        public string[] User { get; set; }
+        public string[] Users { get; set; }
     }
 }

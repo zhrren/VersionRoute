@@ -6,12 +6,12 @@ using Xunit;
 
 namespace Tests
 {
-    public class VersionTest : TestBase
+    public class VersionTest
     {
         [Fact]
         public void MatchVersionTest()
         {
-            var rules = new List<Release>()
+            var rules = new List<Package>()
             {
                 CreatePublish("1.0",
                     CreateRule("android","1.0","*","url:android:1.0"),
@@ -38,7 +38,7 @@ namespace Tests
         [Fact]
         public void Test2()
         {
-            var rules = new List<Release>()
+            var rules = new List<Package>()
                 {
                     CreatePublish("1.0",
                         CreateRule("android","1.0","*","url:android:1.0"),
@@ -61,7 +61,7 @@ namespace Tests
         [Fact]
         public void Test3()
         {
-            var rules = new List<Release>()
+            var rules = new List<Package>()
                 {
                     CreatePublish("1.0",
                         CreateRule("android","1.0","*","url:android:1.0"),
@@ -92,7 +92,7 @@ namespace Tests
                     new Group("external", new string[] {"jm","boss","abc"}),
                 };
 
-            var rules = new List<Release>()
+            var rules = new List<Package>()
                 {
                     CreatePublish("1.0",
                         CreateRule("android","1.0",null,"url:android:1.0"),
@@ -116,7 +116,7 @@ namespace Tests
         [Fact]
         public void Test5()
         {
-            var rules = new List<Release>()
+            var rules = new List<Package>()
                 {
                     CreatePublish("1.0",
                         CreateRule("*","1.0","*","url:1.0"), null),
@@ -140,7 +140,7 @@ namespace Tests
         [Fact]
         public void Test6()
         {
-            var rules = new List<Release>()
+            var rules = new List<Package>()
                 {
                     CreatePublish("1.0.0.1",
                         CreateRule("*","2.0","*","url:1.0"), null),
@@ -153,27 +153,27 @@ namespace Tests
 
         #region 工具方法
 
-        private Router CreateNavigator(List<Release> releases, List<Group> groups)
+        private Router CreateNavigator(List<Package> packages, List<Group> groups)
         {
-            var vc = new Router(releases, groups);
+            var vc = new Router(packages, groups);
             return vc;
         }
-        private Release CreatePublish(string version, Native androidNative, Native iosNative)
+        private Package CreatePublish(string version, Client androidClient, Client iosClient)
         {
-            var release = new Release()
+            var package = new Package()
             {
                 Version = version,
-                Native = new List<Native>()
+                Client = new List<Client>()
             };
 
-            if (androidNative != null) release.Native.Add(androidNative);
-            if (iosNative != null) release.Native.Add(iosNative);
+            if (androidClient != null) package.Client.Add(androidClient);
+            if (iosClient != null) package.Client.Add(iosClient);
 
-            return release;
+            return package;
         }
-        private Native CreateRule(string app, string version, string user, string url, string group = null)
+        private Client CreateRule(string app, string version, string user, string url, string group = null)
         {
-            return new Native()
+            return new Client()
             {
                 Name = app,
                 Version = version,
@@ -184,5 +184,7 @@ namespace Tests
         }
 
         #endregion
+
     }
+
 }

@@ -12,18 +12,19 @@ namespace Mark.VersionRoute
         public string User { get; set; }
         public string Group { get; set; }
         public string Url { get; set; }
-        public Version NativeVersion { get; set; }
-        public Version ReleaseVersion { get; set; }
+        public Version ClientVersion { get; set; }
+        public Version PackageVersion { get; set; }
 
-        public Entry(string name, string user, string group, string url, string nativeVer, string releaseVer)
+        public Entry(string name, string user, string group, string url, 
+            string clientVersion, string packageVersion)
         {
             Name = name;
             User = user;
             Group = group;
             Url = url;
 
-            NativeVersion = ParseVersion(nativeVer);
-            ReleaseVersion = ParseVersion(releaseVer);
+            ClientVersion = ParseVersion(clientVersion);
+            PackageVersion = ParseVersion(packageVersion);
         }
 
         public static Version ParseVersion(string version)
