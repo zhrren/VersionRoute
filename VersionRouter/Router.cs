@@ -17,7 +17,7 @@ namespace Mark.VersionRouter
             _groups = groups;
         }
 
-        public Entry Match(string nativeName, string nativeVersion, string uid)
+        public Entry Match(string platform, string vesion = "1.0.0", string uid = "")
         {
             List<Entry> entries = new List<Entry>();
             _packages.ForEach(x =>
@@ -29,10 +29,10 @@ namespace Mark.VersionRouter
                 });
             });
 
-            List<Entry> namedNative = entries.Where(x => VerifyName(x, nativeName)).ToList();
+            List<Entry> namedNative = entries.Where(x => VerifyName(x, platform)).ToList();
 
             var resultList = namedNative.Where(x =>
-                Entry.ParseVersion(nativeVersion) >= x.ClientVersion
+                Entry.ParseVersion(vesion) >= x.ClientVersion
                 && VerifyUser(x, uid, _groups)).ToList();
             var resultItem = resultList.OrderByDescending(x => x.ClientVersion).FirstOrDefault();
             if (resultItem != null)
