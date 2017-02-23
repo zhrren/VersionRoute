@@ -13,5 +13,6 @@ namespace Mark.VersionRouter
         public string User { get; set; }
         public string Group { get; set; }
         public string Url { get; set; }
+        public string[] Payload { get; set; }
     }
 }

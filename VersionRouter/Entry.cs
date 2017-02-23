@@ -12,16 +12,18 @@ namespace Mark.VersionRouter
         public string User { get; set; }
         public string Group { get; set; }
         public string Url { get; set; }
+        public string[] Payload { get; set; }
         public Version ClientVersion { get; set; }
         public Version PackageVersion { get; set; }
 
         public Entry(string name, string user, string group, string url, 
-            string clientVersion, string packageVersion)
+            string clientVersion, string packageVersion, string[] payload)
         {
             Name = name;
             User = user;
             Group = group;
             Url = url;
+            Payload = payload;
 
             ClientVersion = ParseVersion(clientVersion);
             PackageVersion = ParseVersion(packageVersion);

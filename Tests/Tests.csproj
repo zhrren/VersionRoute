@@ -3,6 +3,12 @@
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="settings\Bug1.development.json" />
+    <None Remove="settings\KeepApp_PublishWeb.development.json" />
+    <None Remove="settings\KeepWeb_PublishApp.development.json" />
+    <None Remove="settings\PulishNew.development.json" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Mark.SettingsContext" Version="1.0.5" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
     <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
@@ -10,5 +16,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VersionRouter\VersionRouter.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 </Project>

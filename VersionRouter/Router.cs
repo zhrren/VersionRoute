@@ -24,7 +24,7 @@ namespace Mark.VersionRouter
             {
                 x.Client.ForEach(n =>
                 {
-                    var entry = new Entry(n.Name, n.User, n.Group, n.Url, n.Version, x.Version);
+                    var entry = new Entry(n.Name, n.User, n.Group, n.Url, n.Version, x.Version, n.Payload);
                     entries.Add(entry);
                 });
             });
