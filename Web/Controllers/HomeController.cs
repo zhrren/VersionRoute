@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
-using VersionRouter.Web.Core;
 using NLog;
 using Mark.VersionRouter;
 using System;
 using Mark.ApiResult;
+using Web.Core;
 
-namespace VersionRouter.Web.Controllers
+namespace Web.Controllers
 {
+    [Route("api")]
     public class HomeController : Controller
     {
         private readonly ILogger _log = LogManager.GetCurrentClassLogger();
@@ -16,7 +17,8 @@ namespace VersionRouter.Web.Controllers
         {
             _versionSettingsService = versionSettingsService;
         }
-
+        
+        [HttpGet]
         public IActionResult Index(string name = "", string platform = "", string vesion = "1.0.0", string uid = "", string basever = "", bool redirect = false)
         {
             var packages = _versionSettingsService.GetPackages(name);
@@ -47,11 +49,6 @@ namespace VersionRouter.Web.Controllers
                 return Redirect(item.Url);
             else
                 return Content(url);
-        }
-
-        public IActionResult Error()
-        {
-            return Content("Error");
         }
     }
 }

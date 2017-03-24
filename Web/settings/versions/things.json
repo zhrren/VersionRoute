@@ -1,0 +1,14 @@
+[
+    {
+      "Version": "2.2.0.15235",
+      "Client": [
+        {
+          "Name": "*",
+          "Version": "2.0.0",
+          "User": "*",
+          "Group": null,
+          "Url": "http://m.jiaedian.net/update/things_2.2.0.15235_8207d8b9.wgt"
+        }
+      ]
+    }
+]
